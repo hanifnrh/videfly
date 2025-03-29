@@ -76,7 +76,7 @@ export default function Grid04({ className }: Grid04Props) {
                                     <p className='text-[8px] font-normal text-zinc-800'>
                                         Cari tahu alasannya dan dapatkan tips cepat untuk memperbaikinya. Klik "Tips" untuk melihat apa yang bisa kamu tingkatkan!
                                     </p>
-                                    <div className='w-fit text-white px-6 py-2 text-base font-light bg-[#703BE7] rounded-md'>
+                                    <div className='w-fit text-white px-4 py-1 text-sm font-light bg-[#703BE7] rounded-md'>
                                         Tips
                                     </div>
                                 </div>
@@ -87,14 +87,14 @@ export default function Grid04({ className }: Grid04Props) {
                                     value={value}
                                     gaugePrimaryColor="rgba(118, 74, 230, 1)"
                                     gaugeSecondaryColor="rgba(241, 235, 253, 1)"
-                                    className='col-span-2'
+                                    className='col-span-2 scale-80'
                                 />
                             </div>
                         </div>
                     </div>
 
-                    <div className='w-full bg-transparent col-span-4 flex flex-col justify-between'>
-                        <div className='relative  rounded-md'>
+                    <div className='w-full h-full bg-transparent col-span-4 flex flex-col justify-between'>
+                        <div className='relative rounded-md'>
                             <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                             <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
                                 <div className='bg-white border border-[#ECECEC] items-center justify-start rounded-md flex gap-1 p-2'>

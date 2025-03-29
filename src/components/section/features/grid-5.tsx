@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 // Font
 
-import { AreaChart } from '@/components/section/features/components/area-chart';
 import { ShineBorder } from '@/components/ui/shine-border';
 import { Nunito, Poppins } from 'next/font/google';
 
@@ -17,6 +16,8 @@ const poppins = Poppins({
 const nunito = Nunito({ subsets: ['latin'] })
 
 // Icons
+import { GradientTracing } from '@/components/ui/gradient-tracing';
+import { FaCircleCheck } from "react-icons/fa6";
 
 interface Grid05Props {
     className?: string;
@@ -28,123 +29,138 @@ export default function Grid05({ className }: Grid05Props) {
         <>
             <main>
                 <div className={`${poppins.className} w-full grid grid-cols-12 items-start justify-center px-4 py-8 pb-0 relative gap-2`}>
-                    <div className='w-full relative bg-transparent rounded-lg col-span-8'>
-                        <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
-                        <div className='w-full flex items-center justify-between rounded-lg p-2 text-[8px] font-semibold'>
-                            <div className='bg-white border border-[#ECECEC] grid grid-cols-6 items-center justify-between rounded-lg gap-1 py-2 px-4'>
-                                asdawd
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='w-full bg-transparent col-span-4 flex flex-col justify-between'>
-                        <div className='relative  rounded-md'>
-                            <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
-                            <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
-                                <div className='bg-white border border-[#ECECEC] items-center justify-start rounded-md flex gap-1 p-2'>
-                                    <div className='bg-[#F2F2F2] rounded-full p-2'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="Clock--Streamline-Font-Awesome" height="16" width="16">
-                                            <defs>
-                                                <linearGradient id="gradient1" x1="0" x2="0" y1="0" y2="1">
-                                                    <stop offset="0%" stopColor="#DF2727" />
-                                                    <stop offset="100%" stopColor="#FF8080" />
-                                                </linearGradient>
-                                            </defs>
-                                            <desc>Clock Streamline Icon: https://streamlinehq.com</desc>
-                                            <path d="M8 0a8 8 0 1 1 0 16 8 8 0 1 1 0 -16zm-0.75 3.75v4.25c0 0.25 0.125 0.484375 0.334375 0.625l3 2c0.34375 0.23125 0.809375 0.1375 1.040625 -0.209375s0.1375 -0.809375 -0.209375 -1.040625L8.75 7.6V3.75c0 -0.415625 -0.334375 -0.75 -0.75 -0.75s-0.75 0.334375 -0.75 0.75z" fill="url(#gradient1)" strokeWidth="0.0313" />
-                                        </svg>
-
-                                    </div>
-                                    <div className='flex flex-col justify-between'>
-                                        <div className='text-[8px] font-light'>
-                                            Waktu Terbaik untuk Posting
-                                        </div>
-                                        <div className='text-xs font-semibold'>
-                                            Minggu, 11:00
-                                        </div>
-                                    </div>
+                    <div className='flex flex-col gap-2 col-span-6'>
+                        <div className='w-full relative bg-transparnt rounded-lg'>
+                            <div className='bg-white border border-[#ECECEC] grid grid-cols-6 items-center justify-between rounded-xl gap-1 p-1'>
+                                <div className='flex items-center justify-center p-2'>
+                                    <Image
+                                        src='/section/grid-5/tiktok-logo.png'
+                                        height={1097}
+                                        width={1280}
+                                        alt='TikTok Logo'
+                                        className='w-10 h-10 object-contain'
+                                    />
+                                </div>
+                                <div className='relative flex items-center justify-center p-2 w-16 h-16 border-2 border-[#703BE7] rounded-full'>
+                                    <Image
+                                        src='/section/grid-5/instagram-logo.png'
+                                        height={679}
+                                        width={679}
+                                        alt='Instagram Logo'
+                                        className='w-10 h-10 object-contain'
+                                    />
+                                    <FaCircleCheck className='absolute top-0 right-0 text-[#703BE7]' />
+                                </div>
+                                <div className='flex items-center justify-center p-2'>
+                                    <Image
+                                        src='/section/grid-5/youtube-logo.png'
+                                        height={640}
+                                        width={443}
+                                        alt='YouTube Logo'
+                                        className='w-10 h-10 object-contain'
+                                    />
+                                </div>
+                                <div className='flex items-center justify-center p-2'>
+                                    <Image
+                                        src='/section/grid-5/facebook-logo.png'
+                                        height={1097}
+                                        width={1280}
+                                        alt='Facebook Logo'
+                                        className='w-10 h-10 object-contain'
+                                    />
+                                </div>
+                                <div className='flex items-center justify-center p-2'>
+                                    <Image
+                                        src='/section/grid-5/linkedin-logo.png'
+                                        height={1097}
+                                        width={1280}
+                                        alt='LinkedIn Logo'
+                                        className='w-10 h-10 object-contain'
+                                    />
+                                </div>
+                                <div className='flex items-center justify-center p-2'>
+                                    <Image
+                                        src='/section/grid-5/shopee-logo.png'
+                                        height={1097}
+                                        width={1280}
+                                        alt='Shopee Logo'
+                                        className='w-10 h-10 object-contain'
+                                    />
                                 </div>
                             </div>
                         </div>
 
-                        <div className='relative  rounded-md'>
-                            <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
-                            <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
-                                <div className='bg-white border border-[#ECECEC] items-center justify-start rounded-md flex gap-1 p-2'>
-                                    <div className='bg-[#F2F2F2] rounded-full p-2'>
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <defs>
-                                                <linearGradient id="gradient2" x1="0" x2="0" y1="0" y2="1">
-                                                    <stop offset="0%" stopColor="#703BE7" />
-                                                    <stop offset="100%" stopColor="#A681F9" />
-                                                </linearGradient>
-                                            </defs>
-                                            <path d="M22.2046 9.41001V14.54C22.2148 14.9224 22.1178 15.2999 21.9246 15.63C21.7143 15.9609 21.4167 16.2274 21.0646 16.4C20.7852 16.5393 20.4769 16.6112 20.1646 16.61H19.9146C19.5489 16.5585 19.2036 16.41 18.9146 16.18L16.3846 14.18V15.09C16.3846 16.241 15.9274 17.3449 15.1135 18.1588C14.2996 18.9728 13.1957 19.43 12.0447 19.43H6.13465C4.98402 19.4273 3.88088 18.971 3.06465 18.16C2.66038 17.7578 2.33996 17.2793 2.12195 16.7523C1.90395 16.2253 1.7927 15.6603 1.79465 15.09V8.92002C1.79386 8.35031 1.90602 7.7861 2.12465 7.26001C2.56667 6.1946 3.41113 5.34654 4.47465 4.9C5.00074 4.68137 5.56494 4.56922 6.13465 4.57001H11.9246C12.4975 4.57025 13.0648 4.68234 13.5946 4.9C14.6582 5.34654 15.5026 6.1946 15.9446 7.26001C16.1657 7.78854 16.2747 8.35719 16.2646 8.93V9.83002L18.7947 7.83002C19.0249 7.64913 19.2905 7.51862 19.5744 7.44696C19.8583 7.37531 20.1541 7.3641 20.4426 7.41407C20.7311 7.46403 21.0059 7.57405 21.2491 7.737C21.4924 7.89996 21.6987 8.11223 21.8546 8.36002C22.0618 8.67306 22.1825 9.03528 22.2046 9.41001Z" fill="url(#gradient2)" />
-                                        </svg>
-                                    </div>
-                                    <div className='flex flex-col justify-between'>
-                                        <div className='text-[8px] font-light'>
-                                            Jenis Postingan Terbaik
-                                        </div>
-                                        <div className='text-xs font-semibold'>
-                                            Video
-                                        </div>
-                                    </div>
+                        <div className='w-full relative bg-transparent rounded-lg'>
+                            <div className='bg-white border border-[#ECECEC] flex items-center justify-between rounded-lg gap-1 py-2 px-4'>
+                                <p className='text-xs font-semibold'>
+                                    25-10-2024
+                                </p>
+                                <svg viewBox="-0.5 -0.5 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="Calendar--Streamline-Solar-Ar" height={16} width={16} ><desc>{"Calendar Streamline Icon: https://streamlinehq.com"}</desc><path d="M1.25 7.5c0 -2.357025 0 -3.53553125 0.73223125 -4.26776875C2.71446875 2.5 3.8929750000000003 2.5 6.25 2.5h2.5c2.3569999999999998 0 3.5355625 0 4.26775 0.73223125C13.75 3.96446875 13.75 5.142975 13.75 7.5v1.25c0 2.3569999999999998 0 3.5355625 -0.73225 4.26775C12.285562500000001 13.75 11.107 13.75 8.75 13.75h-2.5c-2.357025 0 -3.53553125 0 -4.26776875 -0.73225C1.25 12.285562500000001 1.25 11.107 1.25 8.75v-1.25Z" stroke="#000000" strokeWidth={1} /><path d="M4.375 2.5V1.5625" stroke="#000000" strokeLinecap="round" strokeWidth={1} /><path d="M10.625 2.5V1.5625" stroke="#000000" strokeLinecap="round" strokeWidth={1} /><path d="M1.5625 5.625h11.875" stroke="#000000" strokeLinecap="round" strokeWidth={1} /><path d="M11.25 10.625c0 0.3451875 -0.2798125 0.625 -0.625 0.625s-0.625 -0.2798125 -0.625 -0.625 0.2798125 -0.625 0.625 -0.625 0.625 0.2798125 0.625 0.625Z" fill="#000000" strokeWidth={1} /><path d="M11.25 8.125c0 0.3451875 -0.2798125 0.625 -0.625 0.625s-0.625 -0.2798125 -0.625 -0.625 0.2798125 -0.625 0.625 -0.625 0.625 0.2798125 0.625 0.625Z" fill="#000000" strokeWidth={1} /><path d="M8.125 10.625c0 0.3451875 -0.2798125 0.625 -0.625 0.625s-0.625 -0.2798125 -0.625 -0.625 0.2798125 -0.625 0.625 -0.625 0.625 0.2798125 0.625 0.625Z" fill="#000000" strokeWidth={1} /><path d="M8.125 8.125c0 0.3451875 -0.2798125 0.625 -0.625 0.625s-0.625 -0.2798125 -0.625 -0.625 0.2798125 -0.625 0.625 -0.625 0.625 0.2798125 0.625 0.625Z" fill="#000000" strokeWidth={1} /><path d="M5 10.625c0 0.3451875 -0.279825 0.625 -0.625 0.625s-0.625 -0.2798125 -0.625 -0.625 0.279825 -0.625 0.625 -0.625 0.625 0.2798125 0.625 0.625Z" fill="#000000" strokeWidth={1} /><path d="M5 8.125c0 0.3451875 -0.279825 0.625 -0.625 0.625s-0.625 -0.2798125 -0.625 -0.625 0.279825 -0.625 0.625 -0.625 0.625 0.2798125 0.625 0.625Z" fill="#000000" strokeWidth={1} /></svg>
+                            </div>
+                        </div>
+
+                        <div className='w-full relative bg-transparent rounded-lg'>
+                            <div className='bg-white border border-[#ECECEC] flex items-center justify-between rounded-lg gap-1 py-2 px-4'>
+                                <p className='text-xs font-normal text-zinc-400'>
+                                    Waktu
+                                </p>
+                                <div className='text-xs font-semibold flex items-center gap-2'>
+                                    WIB (UTC+07)
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" id="Clock-3--Streamline-Lucide" height={16} width={16} ><desc>{"Clock 3 Streamline Icon: https://streamlinehq.com"}</desc><path d="M1.25 7.5a6.25 6.25 0 1 0 12.5 0 6.25 6.25 0 1 0 -12.5 0" strokeWidth={1} /><path d="m7.5 3.75 0 3.75 2.8125 0" strokeWidth={1} /></svg>
                                 </div>
                             </div>
                         </div>
+
+                        <div className='w-full relative bg-transparent rounded-lg'>
+                            <div className='w-fit bg-[#703BE7] text-white flex items-center justify-between rounded-lg gap-2 py-2 px-4'>
+                                <p className='text-sm'>
+                                    Buat Jadwal
+                                </p>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 16 16" strokeLinecap="round" strokeLinejoin="round" stroke="#ffffff" id="Calendar-Plus--Streamline-Mynaui" height={20} width={20} ><desc>{"Calendar Plus Streamline Icon: https://streamlinehq.com"}</desc><path d="M10.3125 3.125V1.875m-5.625 1.25V1.875M2.03125 5h10.9375M6.25 8.75h2.5m-1.25 -1.25v2.5m-5.625 -3.7225c0 -1.3218750000000001 0 -1.983125 0.2725 -2.488125a2.435 2.435 0 0 1 1.0925 -1.031875C3.775 2.5 4.475 2.5 5.875 2.5h3.25c1.4000000000000001 0 2.1 0 2.6350000000000002 0.2575 0.470625 0.22625 0.8525 0.5874999999999999 1.0925 1.03125 0.2725 0.5062500000000001 0.2725 1.1675 0.2725 2.489375v3.07c0 1.3218750000000001 0 1.983125 -0.2725 2.488125a2.435 2.435 0 0 1 -1.0925 1.031875C11.225000000000001 13.125 10.525 13.125 9.125 13.125H5.875c-1.4000000000000001 0 -2.1 0 -2.6350000000000002 -0.2575a2.435 2.435 0 0 1 -1.0925 -1.03125C1.875 11.33 1.875 10.66875 1.875 9.346875z" strokeWidth={1} /></svg>
+                            </div>
+                        </div>
+
+                        <GradientTracing
+                            width={100}
+                            height={50}
+                            path="M50,0 V25 V50"
+                        />
+
+                        <GradientTracing
+                            width={100}
+                            height={50}
+                            path="M0,25 H25 H50"
+                        />
+
                     </div>
 
-                    <div className='w-full relative bg-transparent rounded-md col-span-6'>
+                    <div className='w-full relative bg-transparent rounded-md col-span-3'>
                         <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
-                        <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
-                            <div className='relative bg-white border border-[#ECECEC] items-center justify-center rounded-md flex flex-col gap-1 p-2'>
-                                asdawdawd
-                            </div>
+                        <div className='w-full justify-between rounded-lg p-2 text-[8px] font-semibold'>
+                            <Image
+                                src='/section/grid-5/jadwal-1.png'
+                                height={452}
+                                width={760}
+                                alt='Jadwal'
+                                className='w-full rounded-lg'
+                            />
                         </div>
                     </div>
 
-                    <div className='w-full relative bg-transparent rounded-md col-span-6'>
+                    <div className='w-full relative bg-transparent rounded-md col-span-3'>
                         <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
-                        <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
-                            <div className='relative bg-white border border-[#ECECEC] items-center justify-center rounded-md flex flex-col gap-1 p-2'>
-                                <div className='w-full flex items-center justify-between'>
-                                    <div className='flex flex-col'>
-                                        <div>
-                                            Followers Growth
-                                        </div>
-                                        <div className='flex items-center gap-1'>
-                                            <p className={`${nunito.className} text-sm font-bold`}>
-                                                1550300
-                                            </p>
-                                            <p className='text-[10px] font-light'>
-                                                current followers
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className='absolute inset-x-0 bottom-0 flex flex-col gap-6'>
-                                        <div className='border-t border-zinc-300 border-dashed' />
-                                        <div className='border-t border-zinc-300 border-dashed' />
-                                        <div className='border-t border-zinc-300 border-dashed' />
-                                        <div className='border-t border-zinc-300 border-dashed' />
-                                    </div>
-                                    <div className='flex items-center gap-2 border border-[#E6E6E6] rounded-sm px-2 py-1 font-normal'>
-                                        Monthly
-
-                                        <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'><title>down_line</title><g id="down_line" fill='none' fillRule='evenodd'><path d='M24 0v24H0V0h24ZM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01-.184-.092Z' /><path fill='#9B9B9BFF' d='M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414l-5.657 5.657Z' /></g></svg>
-                                    </div>
-                                </div>
-                                <AreaChart />
-                                <Image
-                                    src='/section/grid-4/tooltip-2.png'
-                                    height={56}
-                                    width={35}
-                                    alt='Tooltip'
-                                    className='absolute bottom-8 left-7'
-                                />
-                            </div>
+                        <div className='w-full justify-between rounded-lg p-2 text-[8px] font-semibold'>
+                            <Image
+                                src='/section/grid-5/jadwal-2.png'
+                                height={452}
+                                width={758}
+                                alt='Jadwal'
+                                className='w-full rounded-lg'
+                            />
                         </div>
                     </div>
+
                 </div>
             </main >
         </>
