@@ -10,6 +10,40 @@ import { NumberTicker } from '@/components/ui/number-ticker';
 import { Nunito, Poppins } from 'next/font/google';
 import Link from 'next/link';
 
+import { Marquee } from "@/components/ui/marquee";
+import Image from "next/image";
+
+const companies = [
+    {
+        name: "Tokopedia",
+        url: "/section/footer/tokopedia-logo.png",
+    },
+    {
+        name: "Shopee",
+        url: "/section/footer/shopee-logo.png",
+    },
+    {
+        name: "Beauty Haul",
+        url: "/section/footer/beauty-haul-logo.png",
+    },
+    {
+        name: "Sociolla",
+        url: "/section/footer/sociolla-logo.png",
+    },
+    {
+        name: "TikTok Shop",
+        url: "/section/footer/tiktok-shop-logo.png",
+    },
+    {
+        name: "Lazada",
+        url: "/section/footer/lazada-logo.png",
+    },
+    {
+        name: "Blibli",
+        url: "/section/footer/blibli-logo.png",
+    },
+];
+
 const poppins = Poppins({
     subsets: ['latin'],
     weight: "400"
@@ -84,9 +118,29 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div>
-                    Platform yang didukung:
-                </div>
+                <section id="logos">
+                    <div className="flex items-center container mx-auto px-4 py-12 md:px-8">
+                        <h3 className={`${poppins.className} w-full text-center text-base font-normal text-zinc-700`}>
+                            Platform yang didukung:
+                        </h3>
+                        <div className="relative mt-6">
+                            <Marquee className="max-w-full [--duration:40s] flex items-center">
+                                {companies.map((company, idx) => (
+                                    <Image
+                                        key={idx}
+                                        width={1000}
+                                        height={1000}
+                                        src={company.url}
+                                        className="h-10 w-40 opacity-30 grayscale dark:brightness-0 dark:invert object-contain"
+                                        alt={company.name}
+                                    />
+                                ))}
+                            </Marquee>
+                            <div className="pointer-events-none absolute inset-y-0 left-0 h-full w-1/3 bg-gradient-to-r from-background"></div>
+                            <div className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/3 bg-gradient-to-l from-background"></div>
+                        </div>
+                    </div>
+                </section>
 
             </main>
         </>
