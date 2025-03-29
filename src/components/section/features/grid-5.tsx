@@ -34,7 +34,7 @@ export default function Grid05({ className }: Grid05Props) {
                             <div className='bg-white border border-[#ECECEC] grid grid-cols-6 items-center justify-between rounded-xl gap-1 p-1'>
                                 <div className='flex items-center justify-center'>
                                     <Image
-                                        src='/section/grid-5/tiktok-logo.png'
+                                        src='/section/features/grid-5/tiktok-logo.png'
                                         height={1097}
                                         width={1280}
                                         alt='TikTok Logo'
@@ -43,7 +43,7 @@ export default function Grid05({ className }: Grid05Props) {
                                 </div>
                                 <div className='relative flex items-center justify-center p-2 w-10 h-10 border-2 border-[#703BE7] rounded-full'>
                                     <Image
-                                        src='/section/grid-5/instagram-logo.png'
+                                        src='/section/features/grid-5/instagram-logo.png'
                                         height={679}
                                         width={679}
                                         alt='Instagram Logo'
@@ -53,7 +53,7 @@ export default function Grid05({ className }: Grid05Props) {
                                 </div>
                                 <div className='flex items-center justify-center'>
                                     <Image
-                                        src='/section/grid-5/youtube-logo.png'
+                                        src='/section/features/grid-5/youtube-logo.png'
                                         height={640}
                                         width={443}
                                         alt='YouTube Logo'
@@ -62,7 +62,7 @@ export default function Grid05({ className }: Grid05Props) {
                                 </div>
                                 <div className='flex items-center justify-center'>
                                     <Image
-                                        src='/section/grid-5/facebook-logo.png'
+                                        src='/section/features/grid-5/facebook-logo.png'
                                         height={1097}
                                         width={1280}
                                         alt='Facebook Logo'
@@ -71,7 +71,7 @@ export default function Grid05({ className }: Grid05Props) {
                                 </div>
                                 <div className='flex items-center justify-center'>
                                     <Image
-                                        src='/section/grid-5/linkedin-logo.png'
+                                        src='/section/features/grid-5/linkedin-logo.png'
                                         height={1097}
                                         width={1280}
                                         alt='LinkedIn Logo'
@@ -80,7 +80,7 @@ export default function Grid05({ className }: Grid05Props) {
                                 </div>
                                 <div className='flex items-center justify-center'>
                                     <Image
-                                        src='/section/grid-5/shopee-logo.png'
+                                        src='/section/features/grid-5/shopee-logo.png'
                                         height={1097}
                                         width={1280}
                                         alt='Shopee Logo'
@@ -131,7 +131,7 @@ export default function Grid05({ className }: Grid05Props) {
                         <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                         <div className='w-full justify-between rounded-lg p-2 text-[8px] font-semibold'>
                             <Image
-                                src='/section/grid-5/jadwal-1.png'
+                                src='/section/features/grid-5/jadwal-1.png'
                                 height={452}
                                 width={760}
                                 alt='Jadwal'
@@ -144,7 +144,7 @@ export default function Grid05({ className }: Grid05Props) {
                         <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                         <div className='w-full justify-between rounded-lg p-2 text-[8px] font-semibold'>
                             <Image
-                                src='/section/grid-5/jadwal-2.png'
+                                src='/section/features/grid-5/jadwal-2.png'
                                 height={452}
                                 width={758}
                                 alt='Jadwal'

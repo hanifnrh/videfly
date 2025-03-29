@@ -92,14 +92,14 @@ export default function Grid03({ className }: Grid03Props) {
 
                                 <div className='w-full grid grid-cols-2 justify-between rounded-md text-[8px] text-zinc-500'>
                                     <Image
-                                        src='/section/grid-3/edit-1.png'
+                                        src='/section/features/grid-3/edit-1.png'
                                         width={99}
                                         height={99}
                                         alt='Grid03 1'
                                         className='w-full rounded-md'
                                     />
                                     <Image
-                                        src='/section/grid-3/edit-2.png'
+                                        src='/section/features/grid-3/edit-2.png'
                                         width={99}
                                         height={99}
                                         alt='Grid03 2'

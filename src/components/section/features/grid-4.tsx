@@ -176,7 +176,7 @@ export default function Grid04({ className }: Grid04Props) {
                                     </BarChart>
                                 </ChartContainer>
                                 <Image
-                                    src='/section/grid-4/tooltip.png'
+                                    src='/section/features/grid-4/tooltip.png'
                                     height={43}
                                     width={23}
                                     alt='Tooltip'
@@ -218,7 +218,7 @@ export default function Grid04({ className }: Grid04Props) {
                                 </div>
                                 <AreaChart />
                                 <Image
-                                    src='/section/grid-4/tooltip-2.png'
+                                    src='/section/features/grid-4/tooltip-2.png'
                                     height={56}
                                     width={35}
                                     alt='Tooltip'

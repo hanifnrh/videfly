@@ -52,7 +52,7 @@ export default function Grid01({ className }: Grid01Props) {
                             Processing
                         </Button>
                         <Image
-                            src='/section/grid-1/arrow.png'
+                            src='/section/features/grid-1/arrow.png'
                             width={7}
                             height={75}
                             alt='Arrow'
@@ -65,28 +65,28 @@ export default function Grid01({ className }: Grid01Props) {
                             <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                             <div className='w-full grid grid-cols-4 justify-between rounded-md p-2 text-[8px] text-zinc-500'>
                                 <Image
-                                    src='/section/grid-1/video-1.png'
+                                    src='/section/features/grid-1/video-1.png'
                                     width={70}
                                     height={116}
                                     alt='Grid01 1'
                                     className='rounded-md'
                                 />
                                 <Image
-                                    src='/section/grid-1/video-2.png'
+                                    src='/section/features/grid-1/video-2.png'
                                     width={70}
                                     height={116}
                                     alt='Grid01 2'
                                     className='rounded-md'
                                 />
                                 <Image
-                                    src='/section/grid-1/video-3.png'
+                                    src='/section/features/grid-1/video-3.png'
                                     width={70}
                                     height={116}
                                     alt='Grid01 3'
                                     className='rounded-md'
                                 />
                                 <Image
-                                    src='/section/grid-1/video-4.png'
+                                    src='/section/features/grid-1/video-4.png'
                                     width={70}
                                     height={116}
                                     alt='Grid01 4'

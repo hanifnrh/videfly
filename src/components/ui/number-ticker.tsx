@@ -5,6 +5,10 @@ import { ComponentPropsWithoutRef, useEffect, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
+import { Nunito } from "next/font/google";
+
+const nunito = Nunito({ subsets: ["latin"] });
+
 interface NumberTickerProps extends ComponentPropsWithoutRef<"span"> {
   value: number;
   startValue?: number;
@@ -39,25 +43,23 @@ export function NumberTicker({
     }
   }, [motionValue, isInView, delay, value, direction, startValue]);
 
-  useEffect(
-    () =>
-      springValue.on("change", (latest) => {
-        if (ref.current) {
-          ref.current.textContent = Intl.NumberFormat("en-US", {
-            minimumFractionDigits: decimalPlaces,
-            maximumFractionDigits: decimalPlaces,
-          }).format(Number(latest.toFixed(decimalPlaces)));
-        }
-      }),
-    [springValue, decimalPlaces],
-  );
+  useEffect(() => {
+    return springValue.on("change", (latest) => {
+      if (ref.current) {
+        ref.current.textContent = Intl.NumberFormat("en-US", {
+          minimumFractionDigits: decimalPlaces,
+          maximumFractionDigits: decimalPlaces,
+        }).format(Number(latest.toFixed(decimalPlaces)));
+      }
+    });
+  }, [springValue, decimalPlaces]);
 
   return (
     <span
       ref={ref}
       className={cn(
-        "inline-block tabular-nums tracking-wider text-black dark:text-white",
-        className,
+        `${nunito.className} inline-block tabular-nums tracking-wider text-black dark:text-white font-bold`,
+        className
       )}
       {...props}
     >
