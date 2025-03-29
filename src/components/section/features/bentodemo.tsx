@@ -1,4 +1,5 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import Analisis from "./analisis";
 import Edit from "./edit";
 import Template from "./template";
 import Video from "./video";
@@ -65,7 +66,7 @@ const features = [
         href: "#",
         cta: "Selengkapnya",
         background: (
-            <Video />
+            <Analisis />
         ),
     },
     {
