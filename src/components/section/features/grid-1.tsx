@@ -19,11 +19,11 @@ const nunito = Nunito({ subsets: ['latin'] })
 // Icons
 import { HiOutlineLink } from "react-icons/hi";
 
-interface VideoProps {
+interface Grid01Props {
     className?: string;
 }
 
-export default function Video({ className }: VideoProps) {
+export default function Grid01({ className }: Grid01Props) {
     return (
         <>
             <main>
@@ -52,7 +52,7 @@ export default function Video({ className }: VideoProps) {
                             Processing
                         </Button>
                         <Image
-                            src='/section/video/arrow.png'
+                            src='/section/grid-1/arrow.png'
                             width={7}
                             height={75}
                             alt='Arrow'
@@ -65,31 +65,31 @@ export default function Video({ className }: VideoProps) {
                             <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                             <div className='w-full grid grid-cols-4 justify-between rounded-md p-2 text-[8px] text-zinc-500'>
                                 <Image
-                                    src='/section/video/video-1.png'
+                                    src='/section/grid-1/video-1.png'
                                     width={70}
                                     height={116}
-                                    alt='Video 1'
+                                    alt='Grid01 1'
                                     className='rounded-md'
                                 />
                                 <Image
-                                    src='/section/video/video-2.png'
+                                    src='/section/grid-1/video-2.png'
                                     width={70}
                                     height={116}
-                                    alt='Video 2'
+                                    alt='Grid01 2'
                                     className='rounded-md'
                                 />
                                 <Image
-                                    src='/section/video/video-3.png'
+                                    src='/section/grid-1/video-3.png'
                                     width={70}
                                     height={116}
-                                    alt='Video 3'
+                                    alt='Grid01 3'
                                     className='rounded-md'
                                 />
                                 <Image
-                                    src='/section/video/video-4.png'
+                                    src='/section/grid-1/video-4.png'
                                     width={70}
                                     height={116}
-                                    alt='Video 4'
+                                    alt='Grid01 4'
                                     className='rounded-md'
                                 />
                             </div>

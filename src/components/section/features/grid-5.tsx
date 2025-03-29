@@ -1,13 +1,14 @@
 
 // Libs
+import Image from 'next/image';
+
 // UI Libs
 
 // Font
 
-import { GaugeCircle } from '@/components/ui/gauge-circle';
+import { AreaChart } from '@/components/section/features/components/area-chart';
 import { ShineBorder } from '@/components/ui/shine-border';
 import { Nunito, Poppins } from 'next/font/google';
-import { useEffect, useState } from 'react';
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -17,24 +18,11 @@ const nunito = Nunito({ subsets: ['latin'] })
 
 // Icons
 
-interface AnalisisProps {
+interface Grid05Props {
     className?: string;
 }
 
-export default function Analisis({ className }: AnalisisProps) {
-
-    const [value, setValue] = useState(0)
-
-    useEffect(() => {
-        const handleIncrement = (prev: number) => {
-            if (prev === 100) return 0
-
-            return prev + 10
-        }
-        setValue(handleIncrement)
-        const interval = setInterval(() => setValue(handleIncrement), 2000)
-        return () => clearInterval(interval)
-    }, [])
+export default function Grid05({ className }: Grid05Props) {
 
     return (
         <>
@@ -44,26 +32,7 @@ export default function Analisis({ className }: AnalisisProps) {
                         <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                         <div className='w-full flex items-center justify-between rounded-lg p-2 text-[8px] font-semibold'>
                             <div className='bg-white border border-[#ECECEC] grid grid-cols-6 items-center justify-between rounded-lg gap-1 py-2 px-4'>
-                                <div className='w-full flex flex-col gap-3 col-span-4'>
-                                    <h5 className='text-xs'>
-                                        Nilaimu bisa ditingkatkan
-                                    </h5>
-                                    <p className='text-[8px] font-normal text-zinc-800'>
-                                        Cari tahu alasannya dan dapatkan tips cepat untuk memperbaikinya. Klik "Tips" untuk melihat apa yang bisa kamu tingkatkan!
-                                    </p>
-                                    <div className='w-fit text-white px-6 py-2 text-base font-light bg-[#703BE7] rounded-md'>
-                                        Tips
-                                    </div>
-                                </div>
-
-                                <GaugeCircle
-                                    max={100}
-                                    min={0}
-                                    value={value}
-                                    gaugePrimaryColor="rgba(118, 74, 230, 1)"
-                                    gaugeSecondaryColor="rgba(241, 235, 253, 1)"
-                                    className='col-span-2'
-                                />
+                                asdawd
                             </div>
                         </div>
                     </div>
@@ -126,20 +95,53 @@ export default function Analisis({ className }: AnalisisProps) {
                         </div>
                     </div>
 
-                    <div className='w-full relative bg-transparent rounded-md col-span-3'>
+                    <div className='w-full relative bg-transparent rounded-md col-span-6'>
                         <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                         <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
-                            <div className='bg-white border border-[#ECECEC] items-center justify-center rounded-md flex flex-col gap-1 p-2'>
-                                Peak Engagement Hours
+                            <div className='relative bg-white border border-[#ECECEC] items-center justify-center rounded-md flex flex-col gap-1 p-2'>
+                                asdawdawd
                             </div>
                         </div>
                     </div>
 
-                    <div className='w-full relative bg-transparent rounded-md col-span-3'>
+                    <div className='w-full relative bg-transparent rounded-md col-span-6'>
                         <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                         <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
-                            <div className='bg-white border border-[#ECECEC] items-center justify-center rounded-md flex flex-col gap-1 p-2'>
-                                Followers Growth
+                            <div className='relative bg-white border border-[#ECECEC] items-center justify-center rounded-md flex flex-col gap-1 p-2'>
+                                <div className='w-full flex items-center justify-between'>
+                                    <div className='flex flex-col'>
+                                        <div>
+                                            Followers Growth
+                                        </div>
+                                        <div className='flex items-center gap-1'>
+                                            <p className={`${nunito.className} text-sm font-bold`}>
+                                                1550300
+                                            </p>
+                                            <p className='text-[10px] font-light'>
+                                                current followers
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className='absolute inset-x-0 bottom-0 flex flex-col gap-6'>
+                                        <div className='border-t border-zinc-300 border-dashed' />
+                                        <div className='border-t border-zinc-300 border-dashed' />
+                                        <div className='border-t border-zinc-300 border-dashed' />
+                                        <div className='border-t border-zinc-300 border-dashed' />
+                                    </div>
+                                    <div className='flex items-center gap-2 border border-[#E6E6E6] rounded-sm px-2 py-1 font-normal'>
+                                        Monthly
+
+                                        <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'><title>down_line</title><g id="down_line" fill='none' fillRule='evenodd'><path d='M24 0v24H0V0h24ZM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01-.184-.092Z' /><path fill='#9B9B9BFF' d='M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414l-5.657 5.657Z' /></g></svg>
+                                    </div>
+                                </div>
+                                <AreaChart />
+                                <Image
+                                    src='/section/grid-4/tooltip-2.png'
+                                    height={56}
+                                    width={35}
+                                    alt='Tooltip'
+                                    className='absolute bottom-8 left-7'
+                                />
                             </div>
                         </div>
                     </div>

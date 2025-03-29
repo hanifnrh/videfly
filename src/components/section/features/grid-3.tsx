@@ -16,11 +16,11 @@ const nunito = Nunito({ subsets: ['latin'] })
 
 // Icons
 
-interface EditProps {
+interface Grid03Props {
     className?: string;
 }
 
-export default function Edit({ className }: EditProps) {
+export default function Grid03({ className }: Grid03Props) {
     return (
         <>
             <main>
@@ -92,17 +92,17 @@ export default function Edit({ className }: EditProps) {
 
                                 <div className='w-full grid grid-cols-2 justify-between rounded-md text-[8px] text-zinc-500'>
                                     <Image
-                                        src='/section/edit/edit-1.png'
+                                        src='/section/grid-3/edit-1.png'
                                         width={99}
                                         height={99}
-                                        alt='Edit 1'
+                                        alt='Grid03 1'
                                         className='w-full rounded-md'
                                     />
                                     <Image
-                                        src='/section/edit/edit-2.png'
+                                        src='/section/grid-3/edit-2.png'
                                         width={99}
                                         height={99}
-                                        alt='Edit 2'
+                                        alt='Grid03 2'
                                         className='w-full rounded-md'
                                     />
                                 </div>
