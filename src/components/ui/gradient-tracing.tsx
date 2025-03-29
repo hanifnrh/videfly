@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "motion/react"
-import React from "react"
+import React, { useId } from "react"
 
 interface GradientTracingProps {
     width: number
@@ -11,6 +11,7 @@ interface GradientTracingProps {
     animationDuration?: number
     strokeWidth?: number
     path?: string
+    className?: string;
 }
 
 export const GradientTracing: React.FC<GradientTracingProps> = ({
@@ -21,11 +22,12 @@ export const GradientTracing: React.FC<GradientTracingProps> = ({
     animationDuration = 2,
     strokeWidth = 2,
     path = `M0,${height / 2} L${width},${height / 2}`,
+    className,
 }) => {
-    const gradientId = `pulse-${Math.random().toString(36).substr(2, 9)}`
+    const gradientId = useId();
 
     return (
-        <div className="relative" style={{ width, height }}>
+        <div className={`relative ${className}`} style={{ width, height }}>
             <svg
                 width={width}
                 height={height}

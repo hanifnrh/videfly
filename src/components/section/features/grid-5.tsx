@@ -29,62 +29,62 @@ export default function Grid05({ className }: Grid05Props) {
         <>
             <main>
                 <div className={`${poppins.className} w-full grid grid-cols-12 items-start justify-center px-4 py-8 pb-0 relative gap-2`}>
-                    <div className='flex flex-col gap-2 col-span-6'>
+                    <div className='relative flex flex-col gap-2 col-span-6'>
                         <div className='w-full relative bg-transparnt rounded-lg'>
                             <div className='bg-white border border-[#ECECEC] grid grid-cols-6 items-center justify-between rounded-xl gap-1 p-1'>
-                                <div className='flex items-center justify-center p-2'>
+                                <div className='flex items-center justify-center'>
                                     <Image
                                         src='/section/grid-5/tiktok-logo.png'
                                         height={1097}
                                         width={1280}
                                         alt='TikTok Logo'
-                                        className='w-10 h-10 object-contain'
+                                        className='w-6 h-6 object-contain'
                                     />
                                 </div>
-                                <div className='relative flex items-center justify-center p-2 w-16 h-16 border-2 border-[#703BE7] rounded-full'>
+                                <div className='relative flex items-center justify-center p-2 w-10 h-10 border-2 border-[#703BE7] rounded-full'>
                                     <Image
                                         src='/section/grid-5/instagram-logo.png'
                                         height={679}
                                         width={679}
                                         alt='Instagram Logo'
-                                        className='w-10 h-10 object-contain'
+                                        className='w-6 h-6 object-contain'
                                     />
                                     <FaCircleCheck className='absolute top-0 right-0 text-[#703BE7]' />
                                 </div>
-                                <div className='flex items-center justify-center p-2'>
+                                <div className='flex items-center justify-center'>
                                     <Image
                                         src='/section/grid-5/youtube-logo.png'
                                         height={640}
                                         width={443}
                                         alt='YouTube Logo'
-                                        className='w-10 h-10 object-contain'
+                                        className='w-6 h-6 object-contain'
                                     />
                                 </div>
-                                <div className='flex items-center justify-center p-2'>
+                                <div className='flex items-center justify-center'>
                                     <Image
                                         src='/section/grid-5/facebook-logo.png'
                                         height={1097}
                                         width={1280}
                                         alt='Facebook Logo'
-                                        className='w-10 h-10 object-contain'
+                                        className='w-6 h-6 object-contain'
                                     />
                                 </div>
-                                <div className='flex items-center justify-center p-2'>
+                                <div className='flex items-center justify-center'>
                                     <Image
                                         src='/section/grid-5/linkedin-logo.png'
                                         height={1097}
                                         width={1280}
                                         alt='LinkedIn Logo'
-                                        className='w-10 h-10 object-contain'
+                                        className='w-6 h-6 object-contain'
                                     />
                                 </div>
-                                <div className='flex items-center justify-center p-2'>
+                                <div className='flex items-center justify-center'>
                                     <Image
                                         src='/section/grid-5/shopee-logo.png'
                                         height={1097}
                                         width={1280}
                                         alt='Shopee Logo'
-                                        className='w-10 h-10 object-contain'
+                                        className='w-6 h-6 object-contain'
                                     />
                                 </div>
                             </div>
@@ -121,17 +121,9 @@ export default function Grid05({ className }: Grid05Props) {
                             </div>
                         </div>
 
-                        <GradientTracing
-                            width={100}
-                            height={50}
-                            path="M50,0 V25 V50"
-                        />
+                        <GradientTracing width={100} height={25} path="M50,0 V25 V50" className="absolute bottom-2 left-6" />
 
-                        <GradientTracing
-                            width={100}
-                            height={50}
-                            path="M0,25 H25 H50"
-                        />
+                        <GradientTracing width={300} height={50} path="M0,25 H25 H190" className="absolute bottom-10 left-18" />
 
                     </div>
 
