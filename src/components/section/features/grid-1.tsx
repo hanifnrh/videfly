@@ -10,14 +10,15 @@ import { ShineBorder } from '@/components/ui/shine-border';
 import { LoaderCircle } from 'lucide-react';
 import { Nunito, Poppins } from 'next/font/google';
 
+// Icons
+import { HiOutlineLink } from "react-icons/hi";
+
 const poppins = Poppins({
     subsets: ['latin'],
     weight: "400"
 });
 const nunito = Nunito({ subsets: ['latin'] })
 
-// Icons
-import { HiOutlineLink } from "react-icons/hi";
 
 interface Grid01Props {
     className?: string;

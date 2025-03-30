@@ -9,15 +9,16 @@ import Image from 'next/image';
 import { ShineBorder } from '@/components/ui/shine-border';
 import { Nunito, Poppins } from 'next/font/google';
 
+// Icons
+import { GradientTracing } from '@/components/ui/gradient-tracing';
+import { FaCircleCheck } from "react-icons/fa6";
+
 const poppins = Poppins({
     subsets: ['latin'],
     weight: "400"
 });
 const nunito = Nunito({ subsets: ['latin'] })
 
-// Icons
-import { GradientTracing } from '@/components/ui/gradient-tracing';
-import { FaCircleCheck } from "react-icons/fa6";
 
 interface Grid05Props {
     className?: string;
