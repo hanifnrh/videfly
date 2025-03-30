@@ -47,10 +47,6 @@ export default function Hero() {
         setCurrentStep(prev => prev + 1);
     };
 
-    const handleBack = () => {
-        setCurrentStep(prev => prev - 1);
-    };
-
     return (
         <div className="mt-14 lg:mt-16 flex flex-col items-center justify-center p-8 pb-20 sm:p-20 relative md:flex-row gap-8 bg-gradient-to-br from-[#7261EF] via-[#B9AFF7] to-[#F1EDFD]">
             {currentStep === STEPS.INITIAL ? (

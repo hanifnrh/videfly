@@ -22,11 +22,7 @@ const nunito = Nunito({ subsets: ['latin'] })
 
 // Icons
 
-interface Grid04Props {
-    className?: string;
-}
-
-export default function Grid04({ className }: Grid04Props) {
+export default function Grid04() {
 
     const [value, setValue] = useState(0)
 
@@ -74,7 +70,7 @@ export default function Grid04({ className }: Grid04Props) {
                                         Nilaimu bisa ditingkatkan
                                     </h5>
                                     <p className='text-[8px] font-normal text-zinc-800'>
-                                        Cari tahu alasannya dan dapatkan tips cepat untuk memperbaikinya. Klik "Tips" untuk melihat apa yang bisa kamu tingkatkan!
+                                        Cari tahu alasannya dan dapatkan tips cepat untuk memperbaikinya. Klik `&ldquo;Tips`&ldquo; untuk melihat apa yang bisa kamu tingkatkan!
                                     </p>
                                     <div className='w-fit text-white px-4 py-1 text-xs xl:text-sm font-light bg-[#703BE7] rounded-md'>
                                         Tips

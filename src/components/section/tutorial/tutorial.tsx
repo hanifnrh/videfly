@@ -6,14 +6,10 @@
 
 // Font
 
-import { Nunito, Poppins } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 import Badge from '../../ui/badge';
 import { TabsDemo } from './tabs-demo';
 
-const poppins = Poppins({
-    subsets: ['latin'],
-    weight: "400"
-});
 const nunito = Nunito({ subsets: ['latin'] })
 
 // Icons

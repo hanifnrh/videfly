@@ -13,7 +13,6 @@ import { Menu, X } from "lucide-react"
 import { Nunito, Poppins } from 'next/font/google'
 import Image from "next/image"
 import Link from "next/link"
-import * as React from "react"
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -23,55 +22,7 @@ const nunito = Nunito({
     subsets: ['latin'],
 });
 
-const data = [
-    {
-        goal: 400,
-    },
-    {
-        goal: 300,
-    },
-    {
-        goal: 200,
-    },
-    {
-        goal: 300,
-    },
-    {
-        goal: 200,
-    },
-    {
-        goal: 278,
-    },
-    {
-        goal: 189,
-    },
-    {
-        goal: 239,
-    },
-    {
-        goal: 300,
-    },
-    {
-        goal: 200,
-    },
-    {
-        goal: 278,
-    },
-    {
-        goal: 189,
-    },
-    {
-        goal: 349,
-    },
-]
-
 export function Mobile() {
-    const [goal, setGoal] = React.useState(350)
-
-    function onClick(adjustment: number) {
-        setGoal(Math.max(200, Math.min(400, goal + adjustment)))
-    }
-
     return (
         <div className={`${poppins.className}`}>
             <Drawer direction="right">

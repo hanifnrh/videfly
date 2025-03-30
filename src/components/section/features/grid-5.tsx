@@ -7,7 +7,7 @@ import Image from 'next/image';
 // Font
 
 import { ShineBorder } from '@/components/ui/shine-border';
-import { Nunito, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
 // Icons
 import { GradientTracing } from '@/components/ui/gradient-tracing';
@@ -17,14 +17,9 @@ const poppins = Poppins({
     subsets: ['latin'],
     weight: "400"
 });
-const nunito = Nunito({ subsets: ['latin'] })
 
 
-interface Grid05Props {
-    className?: string;
-}
-
-export default function Grid05({ className }: Grid05Props) {
+export default function Grid05() {
 
     return (
         <>

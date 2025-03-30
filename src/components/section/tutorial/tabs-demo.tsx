@@ -3,13 +3,12 @@ import { ShineBorder } from "@/components/ui/shine-border";
 import Image from "next/image";
 import { useState } from "react";
 
-import { Nunito, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
     subsets: ["latin"],
     weight: "400",
 });
-const nunito = Nunito({ subsets: ["latin"] });
 
 export function TabsDemo() {
     const [activeStep, setActiveStep] = useState(1);

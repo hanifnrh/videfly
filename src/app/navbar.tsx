@@ -1,32 +1,17 @@
 "use client";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
 
 // Font
 import { Mobile } from "@/components/section/navbar/mobile";
-import { Outfit, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Image from "next/image";
 import Link from "next/link";
 
-const outfit = Outfit({ subsets: ['latin'] });
 const poppins = Poppins({
     subsets: ['latin'],
     weight: "400"
 });
 
 export default function ResponsiveNavbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const currentPath = usePathname();
-
-    // Define menu items and their corresponding paths
-    const menuItems = [
-        { label: "Fitur AI", path: "/fiturai" },
-        { label: "Cara Kerja", path: "/carakerja" },
-        { label: "Harga", path: "/harga" },
-        { label: "Support", path: "/support" },
-        { label: "Masuk", path: "/masuk" },
-        { label: "Buat Video", path: "/video" },
-    ];
 
     return (
         <div

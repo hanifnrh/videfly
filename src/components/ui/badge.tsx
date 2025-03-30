@@ -1,12 +1,11 @@
 "use client";
 
-import { Nunito, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
     subsets: ['latin'],
     weight: "400"
 });
-const nunito = Nunito({ subsets: ['latin'] });
 
 interface BadgeProps {
     text: string;
