@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: ["/"],
             },
         ],
-        sitemap: "https://www.videfly.vercel.app/sitemap.xml",
+        sitemap: "https://www.videfly-two.vercel.app/sitemap.xml",
     };
 }
