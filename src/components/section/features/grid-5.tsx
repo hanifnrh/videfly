@@ -38,18 +38,18 @@ export default function Grid05({ className }: Grid05Props) {
                                         height={1097}
                                         width={1280}
                                         alt='TikTok Logo'
-                                        className='w-6 h-6 object-contain'
+                                        className='w-3 h-3 xl:w-6 xl:h-6 object-contain'
                                     />
                                 </div>
-                                <div className='relative flex items-center justify-center p-2 w-10 h-10 border-2 border-[#703BE7] rounded-full'>
+                                <div className='relative flex items-center justify-center lg:p-2 w-6 h-6 lg:w-10 lg:h-10 border-2 border-[#703BE7] rounded-full'>
                                     <Image
                                         src='/section/features/grid-5/instagram-logo.png'
                                         height={679}
                                         width={679}
                                         alt='Instagram Logo'
-                                        className='w-6 h-6 object-contain'
+                                        className='w-3 h-3 xl:w-6 xl:h-6 object-contain'
                                     />
-                                    <FaCircleCheck className='absolute top-0 right-0 text-[#703BE7]' />
+                                    <FaCircleCheck className='absolute top-0 right-0 text-[#703BE7] text-[8px]' />
                                 </div>
                                 <div className='flex items-center justify-center'>
                                     <Image
@@ -57,7 +57,7 @@ export default function Grid05({ className }: Grid05Props) {
                                         height={640}
                                         width={443}
                                         alt='YouTube Logo'
-                                        className='w-6 h-6 object-contain'
+                                        className='w-3 h-3 xl:w-6 xl:h-6 object-contain'
                                     />
                                 </div>
                                 <div className='flex items-center justify-center'>
@@ -66,7 +66,7 @@ export default function Grid05({ className }: Grid05Props) {
                                         height={1097}
                                         width={1280}
                                         alt='Facebook Logo'
-                                        className='w-6 h-6 object-contain'
+                                        className='w-3 h-3 xl:w-6 xl:h-6 object-contain'
                                     />
                                 </div>
                                 <div className='flex items-center justify-center'>
@@ -75,7 +75,7 @@ export default function Grid05({ className }: Grid05Props) {
                                         height={1097}
                                         width={1280}
                                         alt='LinkedIn Logo'
-                                        className='w-6 h-6 object-contain'
+                                        className='w-3 h-3 xl:w-6 xl:h-6 object-contain'
                                     />
                                 </div>
                                 <div className='flex items-center justify-center'>
@@ -84,7 +84,7 @@ export default function Grid05({ className }: Grid05Props) {
                                         height={1097}
                                         width={1280}
                                         alt='Shopee Logo'
-                                        className='w-6 h-6 object-contain'
+                                        className='w-3 h-3 xl:w-6 xl:h-6 object-contain'
                                     />
                                 </div>
                             </div>

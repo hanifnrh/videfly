@@ -24,7 +24,7 @@ export function GaugeCircle({
 
     return (
         <div
-            className={cn("relative size-30 rounded-full bg-[#F1EBFD] text-2xl font-semibold", className)}
+            className={cn("relative size-24 xl:size-30 rounded-full bg-[#F1EBFD] text-2xl font-semibold", className)}
             style={
                 {
                     "--circle-size": "100px",
@@ -85,7 +85,7 @@ export function GaugeCircle({
                 />
             </svg>
             <div
-                className="w-16 h-16 flex flex-col justify-center items-center rounded-full bg-white shadow-md p-4 animate-in fade-in absolute inset-0 m-auto size-fit text-[#703BE7] text-center text-lg"
+                className="w-12 h-12 xl:w-16 xl:h-16 flex flex-col justify-center items-center rounded-full bg-white shadow-md p-4 animate-in fade-in absolute inset-0 m-auto size-fit text-[#703BE7] text-center text-lg"
                 style={{
                     animationDelay: "0s",
                     transitionDuration: "1s",

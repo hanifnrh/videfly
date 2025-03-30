@@ -1,16 +1,9 @@
 "use client";
-import {
-    Navbar,
-    NavbarBrand,
-    NavbarContent,
-    NavbarMenu,
-    NavbarMenuItem,
-    NavbarMenuToggle
-} from "@heroui/react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 // Font
+import { Mobile } from "@/components/section/navbar/mobile";
 import { Outfit, Poppins } from 'next/font/google';
 import Image from "next/image";
 import Link from "next/link";
@@ -59,7 +52,7 @@ export default function ResponsiveNavbar() {
                 </div>
                 <div className={`w-full hidden md:block md:w-auto`} id="navbar-default">
                     <div className="items-center flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                        <div className={`${poppins.className} font-medium flex flex-col md:flex-row md:gap-x-10 gap-y-3 items-center`}>
+                        <div className={`${poppins.className} font-medium flex flex-col md:flex-row lg:gap-x-4 xl:gap-x-10 gap-y-3 items-center`}>
                             <Link href="/fiturai" rel="canonical" aria-label="Fitur AI">
                                 <p
                                     className="cursor-pointer transition-all text-zinc-500 text-base rounded-xl px-4 py-3"
@@ -111,48 +104,9 @@ export default function ResponsiveNavbar() {
             </nav>
 
             {/* Navbar for small screens */}
-            <Navbar
-                className="lg:hidden"
-                isMenuOpen={isMenuOpen}
-                onMenuOpenChange={setIsMenuOpen}
-            >
-                <NavbarContent justify="start">
-                    <NavbarMenuToggle
-                        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    />
-                </NavbarContent>
-
-                <NavbarContent justify="center">
-                    <NavbarBrand>
-                        <Link href="/" className="flex items-center space-x-4" rel="canonical" aria-label="Brand Logo">
-                            <Image
-                                src="/section/hero/hero-videfly.png"
-                                className="h-8 w-auto navbar-logo"
-                                alt="Logo Videfly"
-                                width={1000}
-                                height={1000}
-                            />
-                        </Link>
-                    </NavbarBrand>
-                </NavbarContent>
-
-                <NavbarMenu className="flex justify-center items-center text-center gap-10">
-                    {menuItems.map((item, index) => (
-                        <NavbarMenuItem key={`${item.label}-${index}`}>
-                            <Link
-                                className={`${outfit.className} w-full ${currentPath === item.path
-                                    ? "font-semibold" // Apply active class if the link is active
-                                    : ""}`}
-                                href={item.path === "#" ? "#" : item.path} // Fix for Mode Toggle
-                                rel="canonical"
-
-                            >
-                                {item.label}
-                            </Link>
-                        </NavbarMenuItem>
-                    ))}
-                </NavbarMenu>
-            </Navbar>
+            <div className={`${poppins.className} lg:hidden`}>
+                <Mobile></Mobile>
+            </div>
         </div>
     );
 }

@@ -14,7 +14,7 @@ interface BadgeProps {
 
 export default function Badge({ text }: BadgeProps) {
     return (
-        <div className={`${poppins.className} flex items-center justify-center gap-2 w-fit font-bold text-sm text-transparent bg-gradient-to-r from-[#7F52FF] to-[#6f3be7d3] p-[1.4px] rounded-full`}>
+        <div className={`${poppins.className} flex items-center justify-center gap-2 w-fit font-bold text-xs sm:text-sm text-transparent bg-gradient-to-r from-[#7F52FF] to-[#6f3be7d3] p-[1.4px] rounded-full`}>
             <div className="flex items-center justify-center w-full h-full bg-white rounded-full px-3 py-1">
                 <div className="flex items-center justify-center gap-1 text-[#703BE7]">
                     <svg

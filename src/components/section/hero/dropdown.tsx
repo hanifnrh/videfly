@@ -34,14 +34,14 @@ const StaggeredDropDown: React.FC<StaggeredDropDownProps> = ({ onAnalyze }) => {
     };
 
     return (
-        <div className="w-full flex flex-col bg-white gap-2">
-            <div className="flex items-center justify-between gap-2">
+        <div className="w-full flex flex-col gap-2">
+            <div className="flex items-center justify-between gap-1">
                 <motion.div animate={open ? "open" : "closed"} className="w-full relative">
                     <button
                         onClick={() => setOpen((pv) => !pv)}
-                        className="w-full flex items-center justify-between gap-2 px-4 py-3 rounded-xl text-zinc-400 bg-white border-2 border-[#703BE7] transition-colors"
+                        className="w-full flex items-center justify-between gap-2 p-2 sm:py-3 rounded-xl text-zinc-400 bg-white border-2 border-[#703BE7] transition-colors"
                     >
-                        <span className={`${poppins.className} w-sm flex items-center gap-2 font-medium text-base text-start`}>
+                        <span className={`${poppins.className} w-32 sm:w-sm flex items-center gap-2 font-medium text-xs sm:text-base text-start`}>
                             <HiOutlineLink className="flex-shrink-0" />
                             <span className="truncate flex-1">
                                 {selectedUrl || "Pilih Link URL Product"}
@@ -84,7 +84,7 @@ const StaggeredDropDown: React.FC<StaggeredDropDownProps> = ({ onAnalyze }) => {
 
                 <button
                     onClick={handleAnalyze}
-                    className="text-white text-lg px-6 py-3 bg-[#703BE7] hover:bg-[#6f3be7d8] rounded-xl transition-all cursor-pointer"
+                    className="text-white text-sm sm:text-lg px-4 sm:px-6 py-2 sm:py-3 bg-[#703BE7] hover:bg-[#6f3be7d8] border-2 border-[#703BE7] rounded-xl transition-all cursor-pointer"
                 >
                     Analisa
                 </button>
@@ -111,14 +111,14 @@ const Option: React.FC<OptionProps> = ({ text, link, imageSrc, setOpen, setSelec
                     alt={text}
                     width={800}
                     height={800}
-                    className="w-12 h-auto rounded-lg"
+                    className="w-8 sm:w-12 h-auto rounded-sm sm:rounded-lg"
                 />
 
                 <div className={`${poppins.className} w-0 flex-1 flex flex-col justify-center gap-1`}>
-                    <p className="text-sm font-semibold text-zinc-900 line-clamp-1">
+                    <p className="text-xs sm:text-sm font-semibold text-zinc-900 line-clamp-1">
                         {text}
                     </p>
-                    <p className="line-clamp-1 text-zinc-500">
+                    <p className="line-clamp-1 text-xs text-zinc-500">
                         {link}
                     </p>
                 </div>

@@ -1,5 +1,4 @@
 // Libs
-import { HeroUIProvider } from "@heroui/system";
 import type { Metadata } from "next";
 import * as React from "react";
 import "./globals.css";
@@ -53,12 +52,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <HeroUIProvider>
-          <div className="max-w-screen-2xl mx-auto">
-            <ResponsiveNavbar />
-            {children}
-          </div>
-        </HeroUIProvider>
+        <div className="max-w-screen-2xl mx-auto">
+          <ResponsiveNavbar />
+          {children}
+        </div>
       </body>
     </html>
   );

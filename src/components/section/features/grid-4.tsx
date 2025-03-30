@@ -68,7 +68,7 @@ export default function Grid04({ className }: Grid04Props) {
                     <div className='w-full relative bg-transparent rounded-lg col-span-8'>
                         <ShineBorder shineColor={["#9747FF", "#b469d4", "#EEE2FF"]} />
                         <div className='w-full flex items-center justify-between rounded-lg p-2 text-[8px] font-semibold'>
-                            <div className='bg-white border border-[#ECECEC] grid grid-cols-6 items-center justify-between rounded-lg gap-1 py-2 px-4'>
+                            <div className='relative bg-white border border-[#ECECEC] grid grid-cols-6 items-center justify-between rounded-lg gap-1 py-2 pl-4'>
                                 <div className='w-full flex flex-col gap-3 col-span-4'>
                                     <h5 className='text-xs'>
                                         Nilaimu bisa ditingkatkan
@@ -76,7 +76,7 @@ export default function Grid04({ className }: Grid04Props) {
                                     <p className='text-[8px] font-normal text-zinc-800'>
                                         Cari tahu alasannya dan dapatkan tips cepat untuk memperbaikinya. Klik "Tips" untuk melihat apa yang bisa kamu tingkatkan!
                                     </p>
-                                    <div className='w-fit text-white px-4 py-1 text-sm font-light bg-[#703BE7] rounded-md'>
+                                    <div className='w-fit text-white px-4 py-1 text-xs xl:text-sm font-light bg-[#703BE7] rounded-md'>
                                         Tips
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@ export default function Grid04({ className }: Grid04Props) {
                                     value={value}
                                     gaugePrimaryColor="rgba(118, 74, 230, 1)"
                                     gaugeSecondaryColor="rgba(241, 235, 253, 1)"
-                                    className='col-span-2 scale-80'
+                                    className='absolute top-0 -right-4 col-span-2 scale-60 xl:scale-80'
                                 />
                             </div>
                         </div>
@@ -99,7 +99,7 @@ export default function Grid04({ className }: Grid04Props) {
                             <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
                                 <div className='bg-white border border-[#ECECEC] items-center justify-start rounded-md flex gap-1 p-2'>
                                     <div className='bg-[#F2F2F2] rounded-full p-2'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="Clock--Streamline-Font-Awesome" height="16" width="16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className='w-3 h-3' viewBox="0 0 16 16" id="Clock--Streamline-Font-Awesome" height="16" width="16">
                                             <defs>
                                                 <linearGradient id="gradient1" x1="0" x2="0" y1="0" y2="1">
                                                     <stop offset="0%" stopColor="#DF2727" />
@@ -112,10 +112,10 @@ export default function Grid04({ className }: Grid04Props) {
 
                                     </div>
                                     <div className='flex flex-col justify-between'>
-                                        <div className='text-[8px] font-light'>
+                                        <div className='text-[6px] xl:text-[8px] font-light'>
                                             Waktu Terbaik untuk Posting
                                         </div>
-                                        <div className='text-xs font-semibold'>
+                                        <div className='text-[8px] xl:text-xs font-semibold'>
                                             Minggu, 11:00
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ export default function Grid04({ className }: Grid04Props) {
                             <div className='w-full justify-between rounded-md p-2 text-[8px] font-semibold'>
                                 <div className='bg-white border border-[#ECECEC] items-center justify-start rounded-md flex gap-1 p-2'>
                                     <div className='bg-[#F2F2F2] rounded-full p-2'>
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className='w-3 h-3' xmlns="http://www.w3.org/2000/svg">
                                             <defs>
                                                 <linearGradient id="gradient2" x1="0" x2="0" y1="0" y2="1">
                                                     <stop offset="0%" stopColor="#703BE7" />
@@ -139,10 +139,10 @@ export default function Grid04({ className }: Grid04Props) {
                                         </svg>
                                     </div>
                                     <div className='flex flex-col justify-between'>
-                                        <div className='text-[8px] font-light'>
+                                        <div className='text-[6px] xl:text-[8px] font-light'>
                                             Jenis Postingan Terbaik
                                         </div>
-                                        <div className='text-xs font-semibold'>
+                                        <div className='text-[8px] xl:text-xs font-semibold'>
                                             Video
                                         </div>
                                     </div>
