@@ -69,28 +69,28 @@ export default function Grid01({ className }: Grid01Props) {
                                     width={70}
                                     height={116}
                                     alt='Grid01 1'
-                                    className='rounded-md'
+                                    className='w-full rounded-md'
                                 />
                                 <Image
                                     src='/section/features/grid-1/video-2.png'
                                     width={70}
                                     height={116}
                                     alt='Grid01 2'
-                                    className='rounded-md'
+                                    className='w-full rounded-md'
                                 />
                                 <Image
                                     src='/section/features/grid-1/video-3.png'
                                     width={70}
                                     height={116}
                                     alt='Grid01 3'
-                                    className='rounded-md'
+                                    className='w-full rounded-md'
                                 />
                                 <Image
                                     src='/section/features/grid-1/video-4.png'
                                     width={70}
                                     height={116}
                                     alt='Grid01 4'
-                                    className='rounded-md'
+                                    className='w-full rounded-md'
                                 />
                             </div>
                         </div>

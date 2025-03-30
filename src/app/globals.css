@@ -200,12 +200,47 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active,
 textarea:-webkit-autofill {
   background-color: transparent !important;
-  /* Menghapus warna latar autofill */
+
   color: white !important;
-  /* Menyesuaikan warna teks */
+
   -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.1) inset !important;
   -webkit-text-fill-color: #703BE7 !important;
-  /* Menyamarkan autofill */
+
   transition: background-color 5000s ease-in-out 0s;
   border: solid 1px #703BE7;
+}
+
+.logo-tokopedia {
+  width: 120px;
+  height: auto;
+}
+
+.logo-shopee {
+  width: 100px;
+  height: auto;
+}
+
+.logo-beauty-haul {
+  width: 110px;
+  height: auto;;
+}
+
+.logo-blibli {
+  width: 120px;
+  height: auto;
+}
+
+.logo-lazada {
+  width: 100px;
+  height: auto;
+}
+
+.logo-sociolla {
+  width: 110px;
+  height: auto;
+}
+
+.logo-tiktok-shop {
+  width: 120px;
+  height: auto;
 }

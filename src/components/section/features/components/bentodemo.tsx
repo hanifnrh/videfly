@@ -32,7 +32,7 @@ const features = [
         description: "Cukup masukkan tautan produk atau bisnismu, dan Videfly akan otomatis mengambil informasi serta menghasilkan video siap pakai.",
         href: "#",
         cta: "Selengkapnya",
-        className: "col-span-2",
+        className: "xl:col-span-2",
         background: (
             <Grid01 />
         ),
@@ -43,7 +43,7 @@ const features = [
         description: "Tak perlu mendesain dari nol! Gunakan beragam template yang bisa langsung disesuaikan dengan kebutuhan bisnismu.",
         href: "#",
         cta: "Selengkapnya",
-        className: "col-span-2",
+        className: "xl:col-span-2",
         background: (
             <Grid02 />
         ),
@@ -54,7 +54,7 @@ const features = [
         description: "Sesuaikan konten dengan mudah menggunakan Quick Edit. Ubah gambar, musik, atau elemen lainnya tanpa keahlian editing.",
         href: "#",
         cta: "Selengkapnya",
-        className: "col-span-2",
+        className: "md:col-span-2 xl:col-span-2",
         background: (
             <Grid03 />
         ),
@@ -63,7 +63,7 @@ const features = [
         Icon: ChartIcon,
         name: "Analisis & Rekomendasi Cerdas",
         description: "Dapatkan insight performa video dengan Videfly Analytics, lengkap dengan saran improvement untuk konten yang lebih menarik dan efektif.",
-        className: "col-span-3",
+        className: "md:col-span-2 xl:col-span-3",
         href: "#",
         cta: "Selengkapnya",
         background: (
@@ -74,7 +74,7 @@ const features = [
         Icon: CalendarIcon,
         name: "Jadwalkan & Posting Otomatis",
         description: "Hemat waktu dengan integrasi media sosial! Langsung jadwalkan dan publikasikan kontenmu ke berbagai platform tanpa perlu pindah aplikasi.",
-        className: "col-span-3",
+        className: "md:col-span-2 xl:col-span-3",
         href: "#",
         cta: "Selengkapnya",
         background: (

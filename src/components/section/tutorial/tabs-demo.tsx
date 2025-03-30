@@ -41,10 +41,10 @@ export function TabsDemo() {
 
     return (
         <div
-            className={`${poppins.className} grid grid-cols-2 items-center justify-between w-full rounded-3xl gap-6`}
+            className={`${poppins.className} grid grid-cols-1 lg:grid-cols-2 items-center justify-between w-full rounded-3xl gap-6`}
         >
             <div>
-                <Card className="aspect-[3/2] bg-[#F5F5F9] shadow-none border-2 border-[#E6E6E6] p-20 rounded-3xl">
+                <Card className="aspect-[3/2] bg-[#F5F5F9] shadow-none border-2 border-[#E6E6E6] p-10 xl:p-20 rounded-3xl">
                     <CardContent className="flex items-center justify-center bg-white aspect-[3/2] rounded-3xl border border-[#E6E6E6]">
                         {activeStep === 3 ? (
                             <video
@@ -74,7 +74,7 @@ export function TabsDemo() {
             </div>
 
 
-            <div className="grid w-full grid-cols-1 gap-6 rounded-4xl bg-transparent rounded-md">
+            <div className="grid w-full grid-cols-1 gap-6 rounded-4xl bg-transparent">
                 {steps.map((step) => (
                     <div
                         key={step.id}
@@ -91,14 +91,14 @@ export function TabsDemo() {
                             />
                         )}
                         <h4
-                            className={`text-start text-xl font-semibold transition-all duration-300 ${activeStep === step.id || hoveredStep === step.id
+                            className={`text-start text-base xl:text-xl font-semibold transition-all duration-300 ${activeStep === step.id || hoveredStep === step.id
                                 ? "bg-gradient-to-br from-[#7F52FF] to-[#FB8570] bg-clip-text text-transparent"
                                 : "text-black"
                                 }`}
                         >
                             {step.title}
                         </h4>
-                        <p className="text-start text-sm text-zinc-600">
+                        <p className="text-start text-xs xl:text-sm text-zinc-600">
                             {step.description}
                         </p>
                     </div>

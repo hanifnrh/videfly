@@ -55,7 +55,7 @@ const nunito = Nunito({ subsets: ['latin'] })
 export default function Footer() {
     return (
         <>
-            <div className="w-full overflow-x-hidden flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-40 rounded-xl">
+            <div className="w-full max-w-screen-xl mx-auto overflow-x-hidden flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-20 xl:mx-20 rounded-xl">
                 <div className={`${nunito.className} w-full flex flex-col items-center justify-center gap-6 p-8 lg:p-20 rounded-3xl border border-[#E6E6E6]`}>
                     <h3 className="text-xl lg:text-4xl font-bold text-center">
                         Lebih Produktif, Lebih Untung, Lebih Hemat!
@@ -91,27 +91,27 @@ export default function Footer() {
                     </Link>
 
                     <div className="w-full flex items-center justify-between gap-4 mt-12">
-                        <div className="flex flex-col gap-4">
-                            <div className={`${nunito.className} font-bold text-8xl bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text`}>
+                        <div className="flex flex-col gap-4 text-center">
+                            <div className={`${nunito.className} flex items-center font-bold text-3xl  sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text`}>
                                 <NumberTicker value={70} className='bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text' />%
                             </div>
-                            <div className={`${poppins.className} text-base font-bold text-zinc-800 text-center`}>
+                            <div className={`${poppins.className} text-xs sm:text-sm xl:text-base font-bold text-zinc-800 text-center`}>
                                 Produktivitas Meningkat
                             </div>
                         </div>
-                        <div className="flex flex-col gap-4">
-                            <div className={`${nunito.className} font-bold text-8xl bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text`}>
+                        <div className="flex flex-col gap-4 text-center">
+                            <div className={`${nunito.className} flex items-center font-bold text-3xl  sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text`}>
                                 <NumberTicker value={50} className='bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text' />%
                             </div>
-                            <div className={`${poppins.className} text-base font-bold text-zinc-800 text-center`}>
+                            <div className={`${poppins.className} text-xs sm:text-sm xl:text-base font-bold text-zinc-800 text-center`}>
                                 Kenaikan ROI
                             </div>
                         </div>
-                        <div className="flex flex-col gap-4">
-                            <div className={`${nunito.className} font-bold text-8xl bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text`}>
+                        <div className="flex flex-col gap-4 text-center">
+                            <div className={`${nunito.className} flex items-center font-bold text-3xl  sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text`}>
                                 <NumberTicker value={20} className='bg-gradient-to-br from-[#7F52FF] to-[#FB8570] text-transparent bg-clip-text' />%
                             </div>
-                            <div className={`${poppins.className} text-base font-bold text-zinc-800 text-center`}>
+                            <div className={`${poppins.className} text-xs sm:text-sm xl:text-base font-bold text-zinc-800 text-center`}>
                                 Lebih Hemat
                             </div>
                         </div>
@@ -119,22 +119,23 @@ export default function Footer() {
                 </div>
 
                 <section id="logos">
-                    <div className="flex items-center container mx-auto px-4 py-12 md:px-8">
-                        <h3 className={`${poppins.className} w-full text-center text-base font-normal text-zinc-700`}>
+                    <div className="flex flex-col xl:flex-row items-center container mx-auto py-12">
+                        <h3 className={`${poppins.className} w-1/4 text-center text-xs sm:text-sm xl:text-base font-normal text-zinc-700`}>
                             Platform yang didukung:
                         </h3>
-                        <div className="relative mt-6">
-                            <Marquee className="max-w-full [--duration:40s] flex items-center">
+                        <div className="w-3/4 relative mt-6">
+                            <Marquee className="[--duration:40s] flex items-center">
                                 {companies.map((company, idx) => (
                                     <Image
                                         key={idx}
                                         width={1000}
                                         height={1000}
                                         src={company.url}
-                                        className="h-10 w-40 opacity-30 grayscale dark:brightness-0 dark:invert object-contain"
+                                        className={`px-3 opacity-30 grayscale dark:brightness-0 dark:invert object-contain logo-${company.name.toLowerCase().replace(/\s+/g, '-')}`}
                                         alt={company.name}
                                     />
                                 ))}
+
                             </Marquee>
                             <div className="pointer-events-none absolute inset-y-0 left-0 h-full w-1/3 bg-gradient-to-r from-background"></div>
                             <div className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/3 bg-gradient-to-l from-background"></div>
