@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     template: "%s | Videfly"
   },
   keywords: [
-    "pt gama abyakta sejahtera",
-    "gas solution",
+    "videfly",
+    "video AI",
   ],
   icons: {
     icon: `/favicon.ico`,
