@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ShineBorder } from '@/components/ui/shine-border';
 import { LoaderCircle } from 'lucide-react';
-import { Nunito, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
 // Icons
 import { HiOutlineLink } from "react-icons/hi";
@@ -17,14 +17,8 @@ const poppins = Poppins({
     subsets: ['latin'],
     weight: "400"
 });
-const nunito = Nunito({ subsets: ['latin'] })
 
-
-interface Grid01Props {
-    className?: string;
-}
-
-export default function Grid01({ className }: Grid01Props) {
+export default function Grid01() {
     return (
         <>
             <main>
