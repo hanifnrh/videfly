@@ -103,7 +103,7 @@ const Option: React.FC<OptionProps> = ({ text, link, imageSrc, setOpen, setSelec
         <motion.li
             variants={itemVariants}
             onClick={handleClick}
-            className="w-full flex items-center gap-2 p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
+            className="w-full flex items-center gap-2 p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-zinc-200 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
         >
             <motion.div variants={actionIconVariants} className="w-full flex items-center gap-2">
                 <Image
@@ -159,7 +159,7 @@ const itemVariants = {
     },
     closed: {
         opacity: 0,
-        y: -15,
+        y: -10,
         transition: {
             when: "afterChildren",
         },

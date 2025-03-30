@@ -55,7 +55,7 @@ const nunito = Nunito({ subsets: ['latin'] })
 export default function Footer() {
     return (
         <>
-            <main className="w-full overflow-x-hidden flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-40 rounded-xl">
+            <div className="w-full overflow-x-hidden flex flex-col items-center justify-center p-8 pb-20 gap-16 sm:p-40 rounded-xl">
                 <div className={`${nunito.className} w-full flex flex-col items-center justify-center gap-6 p-8 lg:p-20 rounded-3xl border border-[#E6E6E6]`}>
                     <h3 className="text-xl lg:text-4xl font-bold text-center">
                         Lebih Produktif, Lebih Untung, Lebih Hemat!
@@ -142,7 +142,7 @@ export default function Footer() {
                     </div>
                 </section>
 
-            </main>
+            </div>
         </>
     );
 }

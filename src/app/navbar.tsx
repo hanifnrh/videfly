@@ -126,7 +126,7 @@ export default function ResponsiveNavbar() {
                     <NavbarBrand>
                         <Link href="/" className="flex items-center space-x-4" rel="canonical" aria-label="Brand Logo">
                             <Image
-                                src="/hero-videfly.png"
+                                src="/section/hero/hero-videfly.png"
                                 className="h-8 w-auto navbar-logo"
                                 alt="Logo Videfly"
                                 width={1000}
